@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
     });
 });
 
-app.get('/api',(res,res)=>{
+app.get('/api',(req,res)=>{
     return res.json({message:"hello from api site"})
 })
 
