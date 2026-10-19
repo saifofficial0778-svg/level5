@@ -9,9 +9,13 @@ const app = express();
 
 app.get("/", (req, res) => {
     return res.json({
-        message: "hello from docker"
+        message: "hello saif"
     });
 });
+
+app.get('/api',(res,res)=>{
+    return res.json({message:"hello from api site"})
+})
 
 app.listen(PORT, "0.0.0.0", () => {
     console.log(`server started on ${PORT}`);
