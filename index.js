@@ -9,12 +9,12 @@ const app = express();
 
 app.get("/", (req, res) => {
     return res.json({
-        message: "hello saif"
+        message: "hello saif bhai "
     });
 });
 
 app.get('/api',(req,res)=>{
-    return res.json({message:"hello from api site"})
+    return res.json({message:"hello from api site v2"})
 })
 
 app.listen(PORT, "0.0.0.0", () => {
